@@ -1,21 +1,21 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef _LISTS_H_
+#define _LISTS_H_
 
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * struct listint_s - singly linked list
+ * struct listint_tt - singly linked list
  * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
  * for alx project
  */
-typedef struct listint_s
+typedef struct listint_t
 {
  int n;
- struct listint_s *next;
+ struct listint_t *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
